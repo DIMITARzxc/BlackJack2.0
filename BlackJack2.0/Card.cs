@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace BlackJack2._0
 {
-    class Card
+     public struct Card
     {
+        public int Score;
+        public CardName Name;
+        public Suit Suit;
+        public Card(CardName cardName, Suit suit)
+        {
+            Suit = suit;
+            Name = cardName;
+            Score = (int)cardName;
+        }
     }
 }
