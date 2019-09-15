@@ -25,5 +25,18 @@ namespace BlackJack2._0
             }
             return deck;
         }
+        public Card[] ShuffleDeck(Card[] deck)
+        {
+            Random rnd = new Random();
+            for (int i = deck.Length-1; i>=1; i--)
+            {
+                int a = rnd.Next(i);
+                Card temp = deck[a];
+                deck[a] = deck[i];
+                deck[i] = temp;
+            }
+            UserHand = 0;
+            return deck;
+        }
     }
 }
