@@ -25,7 +25,7 @@ namespace BlackJack2._0
             return usedCard;
         }
 
-        public int TakeDealerCard(Card[] deck, int usedHand, Dealer dealer, bool turn)
+        public int TakePlayerCard(Card[] deck, int usedHand, Dealer dealer, bool turn)
         {
             if (!turn && (dealer.TotalScore >= 21 || TotalScore > dealer.TotalScore))
             {
