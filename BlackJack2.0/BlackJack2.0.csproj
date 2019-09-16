@@ -45,9 +45,9 @@
   <ItemGroup>
     <Compile Include="Card.cs" />
     <Compile Include="CardName.cs" />
-    <Compile Include="Dealer.cs" />
-    <Compile Include="MainDeck.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="MainDeck.cs" />
+    <Compile Include="Dealer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Suit.cs" />
