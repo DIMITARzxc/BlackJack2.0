@@ -19,7 +19,7 @@ namespace BlackJack2._0
             {
                 TotalScore += deck[i].Score;
                 usedCard++;
-                Information += $"{deck[i].Name}{deck[i].Suit}";
+                Information += $"{deck[i].Name} {deck[i].Suit}";
             }
             Console.WriteLine($"Your Hand: {Information} Score: {TotalScore}");
             return usedCard;

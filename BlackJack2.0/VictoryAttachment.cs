@@ -46,7 +46,7 @@ namespace BlackJack2._0
         }
         public static bool FirstTurn(ref Player player)
         {
-            if(player.TotalScore==21 || player.TotalScore == 22)
+            if(player.TotalScore==21)
             {
                 player.Win++;
                 Console.WriteLine("Congratulations, you win");
@@ -56,7 +56,7 @@ namespace BlackJack2._0
         }
         public static bool FirstTurn(ref Dealer dealer)
         {
-            if(dealer.TotalScore==21|| dealer.TotalScore == 22)
+            if(dealer.TotalScore==21)
             {
                 dealer.Win++;
                 Console.WriteLine("Ooops, you lose");
