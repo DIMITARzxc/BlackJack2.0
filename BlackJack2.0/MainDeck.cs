@@ -10,16 +10,16 @@ namespace BlackJack2._0
     {
         public int UserHand;
 
-        public  Card[] CreateDeck()
+        public Card[] CreateDeck()
         {
             Card[] deck = new Card[36];
-            for (int cardName = 2, index=0; cardName<=11;cardName++)
+            for (int cardName = 2, index = 0; cardName <= 11; cardName++)
             {
                 if (cardName != 5)
                 {
-                    for(int cardSuit = 0; cardSuit <= 3; cardSuit++, index++)
+                    for (int cardSuit = 0; cardSuit <= 3; cardSuit++, index++)
                     {
-                        deck[index]= new Card((CardName)cardName,(Suit)cardSuit);
+                        deck[index] = new Card((CardName)cardName, (Suit)cardSuit);
                     }
                 }
             }
@@ -28,7 +28,7 @@ namespace BlackJack2._0
         public Card[] ShuffleDeck(Card[] deck)
         {
             Random rnd = new Random();
-            for (int i = deck.Length-1; i>=1; i--)
+            for (int i = deck.Length - 1; i >= 1; i--)
             {
                 int a = rnd.Next(i);
                 Card temp = deck[a];

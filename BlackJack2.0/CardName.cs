@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BlackJack2._0
 {
-  public enum CardName
+    public enum CardName
     {
-        Six=6,
+        Six = 6,
         Seven,
         Eight,
         Nine,
@@ -17,6 +17,6 @@ namespace BlackJack2._0
         Jack,
         Queen,
         King
-        
+
     }
 }

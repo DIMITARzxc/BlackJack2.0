@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BlackJack2._0
 {
-     public struct Player
+    public struct Player
     {
         public int TotalScore;
         public int Win;
         public string Information;
 
-        public int TakeTwoCards(Card[] deck, int usedCard) 
+        public int TakeTwoCards(Card[] deck, int usedCard)
         {
             int takeCard = usedCard + 2;
             for (int i = usedCard; i < takeCard; i++)
@@ -33,7 +33,7 @@ namespace BlackJack2._0
             }
             for (int i = usedHand; i < deck.Length; i++)
             {
-                if (TotalScore >= 21||(dealer.TotalScore < TotalScore && dealer.TotalScore >= 21))
+                if (TotalScore >= 21 || (dealer.TotalScore < TotalScore && dealer.TotalScore >= 21))
                 {
                     return usedHand;
                 }
@@ -50,7 +50,7 @@ namespace BlackJack2._0
                         Console.WriteLine($"You get {Information} Score{TotalScore}");
                         incorrectInput = false;
                     }
-                    else if (input=="S"||input == "s")
+                    else if (input == "S" || input == "s")
                     {
                         Console.WriteLine($"Your hand{Information} Score{TotalScore}");
                         incorrectInput = false;

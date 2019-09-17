@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BlackJack2._0
 {
-    public enum Suit
+    public struct VictoryAttachment
     {
-        Diamonds,
-        Hearts,
-        Spades,
-        Clubs
+        public void Winner(ref Dealer dealer,ref Player player)
+        {
+
+        }
     }
 }
