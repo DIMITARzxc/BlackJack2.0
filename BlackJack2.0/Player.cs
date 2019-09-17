@@ -21,7 +21,7 @@ namespace BlackJack2._0
                 usedCard++;
                 Information += $"{deck[i].Name}{deck[i].Suit}";
             }
-            Console.WriteLine($"Your Hand:{Information} Points:{TotalScore}");
+            Console.WriteLine($"Your Hand: {Information} Score: {TotalScore}");
             return usedCard;
         }
 
@@ -47,12 +47,12 @@ namespace BlackJack2._0
                         TotalScore += deck[i].Score;
                         usedHand++;
                         Information += $"{deck[i].Name} {deck[i].Suit}";
-                        Console.WriteLine($"You get {Information} Score{TotalScore}");
+                        Console.WriteLine($"You get: {Information} Score: {TotalScore}");
                         incorrectInput = false;
                     }
                     else if (input == "S" || input == "s")
                     {
-                        Console.WriteLine($"Your hand{Information} Score{TotalScore}");
+                        Console.WriteLine($"Your hand: {Information} Score: {TotalScore}");
                         incorrectInput = false;
                         i = deck.Length;
                     }

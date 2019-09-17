@@ -22,7 +22,7 @@ namespace BlackJack2._0
                 Information += $"{deck[i].Name} {deck[i].Suit}";
 
             }
-            Console.WriteLine($"Dealer hand:{Information} Score{TotalScore}");
+            Console.WriteLine($"Dealer hand: {Information} Score: {TotalScore}");
             return usedHand;
         }
         public int TakeCard(Card[] deck, int usedHand, Player player)
@@ -34,7 +34,7 @@ namespace BlackJack2._0
                     TotalScore += deck[i].Score;
                     usedHand++;
                     Information += $"{deck[i].Name} {deck[i].Suit}";
-                    Console.WriteLine($"Dealer hand:{Information} Score{TotalScore}");
+                    Console.WriteLine($"Dealer hand: {Information} Score: {TotalScore}");
                 }
             }
             return usedHand;

@@ -8,7 +8,7 @@ namespace BlackJack2._0
 {
     public struct VictoryAttachment
     {
-        public void Winner(ref Dealer dealer,ref Player player)
+        public  static void Winner(ref Dealer dealer,ref Player player)
         {
             if(player.TotalScore<=21 && dealer.TotalScore > 21)
             {
