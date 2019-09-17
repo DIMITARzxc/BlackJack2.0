@@ -10,7 +10,7 @@ namespace BlackJack2._0
     {
         public int TotalScore;
         public string Information;
-        public int Victory;
+        public int Win;
 
         public int TakeTwoCards(Card[] deck, int usedHand)
         {

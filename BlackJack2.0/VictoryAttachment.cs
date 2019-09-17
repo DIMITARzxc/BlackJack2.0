@@ -10,7 +10,39 @@ namespace BlackJack2._0
     {
         public void Winner(ref Dealer dealer,ref Player player)
         {
-
+            if(player.TotalScore<=21 && dealer.TotalScore > 21)
+            {
+                player.Win++;
+                Console.WriteLine("Congratulations, you win");
+            }
+            if(player.TotalScore>dealer.TotalScore && player.TotalScore <= 21)
+            {
+                player.Win++;
+                Console.WriteLine("Congratulations, you win");
+            }
+            if(player.TotalScore>21 && dealer.TotalScore > 21)
+            {
+                if (player.TotalScore<dealer.TotalScore)
+                {
+                    player.Win++;
+                    Console.WriteLine("Congratulations, you win");
+                }
+                else if (player.TotalScore>dealer.TotalScore)
+                {
+                    dealer.Win++;
+                    Console.WriteLine("Ooops, you lose");
+                }
+            }
+            if (dealer.TotalScore<=21 && player.TotalScore>21)
+            {
+                dealer.Win++;
+                Console.WriteLine("Ooops, you lose");
+            }
+            if (dealer.TotalScore>player.TotalScore && dealer.TotalScore<=21)
+            {
+                dealer.Win++;
+                Console.WriteLine("Ooops, you lose");
+            }
         }
     }
 }
