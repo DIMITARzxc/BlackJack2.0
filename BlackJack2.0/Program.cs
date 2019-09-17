@@ -10,6 +10,10 @@ namespace BlackJack2._0
     {
         static void Main(string[] args)
         {
+            Card[] deck = MainDeck.CreateDeck();
+            Dealer dealer = new Dealer();
+            Player player = new Player();
+
         }
     }
 }

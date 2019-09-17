@@ -8,9 +8,9 @@ namespace BlackJack2._0
 {
     public struct MainDeck
     {
-        public int UserHand;
+        public static int UserHand;
 
-        public Card[] CreateDeck()
+        public static Card[] CreateDeck()
         {
             Card[] deck = new Card[36];
             for (int cardName = 2, index = 0; cardName <= 11; cardName++)
@@ -25,7 +25,7 @@ namespace BlackJack2._0
             }
             return deck;
         }
-        public Card[] ShuffleDeck(Card[] deck)
+        public  static Card[] ShuffleDeck(Card[] deck)
         {
             Random rnd = new Random();
             for (int i = deck.Length - 1; i >= 1; i--)
