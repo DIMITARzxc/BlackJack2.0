@@ -44,5 +44,25 @@ namespace BlackJack2._0
                 Console.WriteLine("Ooops, you lose");
             }
         }
+        public static bool FirstTurn(ref Player player)
+        {
+            if(player.TotalScore==21 || player.TotalScore == 22)
+            {
+                player.Win++;
+                Console.WriteLine("Congratulations, you win");
+                return true;
+            }
+            return false;
+        }
+        public static bool FirstTurn(ref Dealer dealer)
+        {
+            if(dealer.TotalScore==21|| dealer.TotalScore == 22)
+            {
+                dealer.Win++;
+                Console.WriteLine("Ooops, you lose");
+                return true;
+            }
+            return false;
+        }
     }
 }
